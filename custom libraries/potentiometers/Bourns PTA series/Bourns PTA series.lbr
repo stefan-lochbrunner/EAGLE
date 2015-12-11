@@ -129,8 +129,19 @@
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <library>
+<description>&lt;h4&gt;Bourns PTA series and TT Electronics PSxx series slide potentiometer&lt;/h4&gt;
+
+By Stefan Lochbrunner
+&lt;br&gt;
+https://github.com/stefan-lochbrunner/EAGLE
+
+&lt;br&gt;&lt;br&gt;
+Based on 'TRIM' device in Adafruits library (https://github.com/adafruit/Adafruit-Eagle-Library)
+&lt;br&gt;
+Contains footprints for Bourns PTA series slide potentiometers that should also fit  TT Electronics PSxx series.</description>
 <packages>
 <package name="SLIDEPOT-45">
+<description>45mm x 9mm, 30mm travel</description>
 <wire x1="-22.5" y1="4.5" x2="22.5" y2="4.5" width="0.127" layer="21"/>
 <wire x1="22.5" y1="4.5" x2="22.5" y2="-4.5" width="0.127" layer="21"/>
 <wire x1="22.5" y1="-4.5" x2="-22.5" y2="-4.5" width="0.127" layer="21"/>
@@ -153,6 +164,7 @@
 <text x="-2" y="-0.5" size="1.27" layer="21" font="vector">45MM</text>
 </package>
 <package name="SLIDEPOT-60">
+<description>60mm x 9mm, 45mm travel</description>
 <wire x1="-30.12" y1="4.5" x2="30.12" y2="4.5" width="0.127" layer="21"/>
 <wire x1="30.12" y1="4.5" x2="30.12" y2="-4.5" width="0.127" layer="21"/>
 <wire x1="30.12" y1="-4.5" x2="-30.12" y2="-4.5" width="0.127" layer="21"/>
@@ -175,6 +187,7 @@
 <text x="-2" y="-0.5" size="1.27" layer="21" font="vector">60MM</text>
 </package>
 <package name="SLIDEPOT-75">
+<description>75mm x 9mm, 60mm travel</description>
 <wire x1="-37.74" y1="4.5" x2="37.26375" y2="4.5" width="0.127" layer="21"/>
 <wire x1="37.26375" y1="4.5" x2="37.26375" y2="-4.5" width="0.127" layer="21"/>
 <wire x1="37.26375" y1="-4.5" x2="-37.74" y2="-4.5" width="0.127" layer="21"/>
@@ -194,7 +207,7 @@
 <pad name="WIPER" x="-36.99" y="-1.75" drill="1.2" diameter="2.1844"/>
 <text x="-2.5" y="5" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="-3" y="-6.5" size="1.27" layer="27" font="vector">&gt;VALUE</text>
-<text x="-2" y="-0.5" size="1.27" layer="21" font="vector">45MM</text>
+<text x="-2" y="-0.5" size="1.27" layer="21" font="vector">75MM</text>
 </package>
 </packages>
 <symbols>
@@ -227,7 +240,7 @@
 <deviceset name="TRIM" prefix="TM" uservalue="yes">
 <description>Sliding potentiometers
 
-Based on Adafruits 'TRIM' device.
+Based on Adafruits (https://github.com/adafruit/Adafruit-Eagle-Library) 'TRIM' device.
 For Bourns PTA series and TT Electronics PSxx series potentiometers.</description>
 <gates>
 <gate name="G$1" symbol="TRIM" x="-7.62" y="2.54"/>
